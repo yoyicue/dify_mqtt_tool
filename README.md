@@ -2,7 +2,8 @@
 
 安装方法，进入到 dify-api 的 docker 中。
 
-```pip install paho-mqtt
+```bash
+pip install paho-mqtt
 cd /app/api/core/tools/provider/builtin
 apt-get update && \
 apt-get install -y git && \
