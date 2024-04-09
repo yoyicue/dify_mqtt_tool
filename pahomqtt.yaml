@@ -1,0 +1,59 @@
+identity:
+  author: yoyicue
+  name: pahomqtt
+  label:
+    en_US: Paho MQTT
+    zh_Hans: Paho MQTT
+  description:
+    en_US: paho mqtt simple tool
+    zh_Hans: paho mqtt 简易工具
+  icon: icon.svg
+credentials_for_provider: 
+  hostname: 
+    type: text-input
+    required: true
+    label:
+      en_US: Hostname
+      zh_Hans: Hostname
+    placeholder: 
+      en_US: Please input your MQTT server hostname
+      zh_Hans: 请输入您的MQTT服务器主机名
+    help: 
+      en_US: TBD
+      zh_Hans: TBD
+  port: 
+    type: text-input
+    required: true
+    label: 
+      en_US: Port
+      zh_Hans: Port
+    placeholder:
+      en_US: Please input your MQTT server port，Default Port 1883
+      zh_Hans: 请输入您的MQTT服务器端口，默认端口 1883
+    help:
+      en_US: TBD
+      zh_Hans: TBD
+  username: 
+    type: text-input
+    required: false
+    label:
+      en_US: Username
+      zh_Hans: Username
+    placeholder:
+      en_US: Please input your username
+      zh_Hans: 请输入您的用户
+    help:
+      en_US: TBD
+      zh_Hans: TBD
+  password: 
+    type: text-input
+    required: false
+    label:
+      en_US: Password
+      zh_Hans: Password
+    placeholder: 
+      en_US: Please input your password
+      zh_Hans: 请输入您的密码
+    help:
+      en_US: TBD
+      zh_Hans: TBD

@@ -1,0 +1,34 @@
+identity:
+  name: single_publish
+  author: yoyicue
+  label:
+    en_US: Publish a single message to a mqtt broker
+    zh_Hans: 向 mqtt broker 发布单个消息
+description:
+  human:
+    en_US: useful for the situation where you have a single messages you want to publish to a broker, then disconnect with nothing else required.It should be noted that this action will not have a return value.
+    zh_Hans: 适用于您想要发布到代理程序的单个消息的情况，然后断开连接而无需其他操作。需要注意，并不会有成功与否的返回。
+  llm: Use the Paho MQTT publish interface to publish a single message to a specified topic. It should be noted that this action will not have a return value.
+parameters:
+  - name: message
+    type: string
+    required: true
+    label:
+      en_US: messgae
+      zh_Hans: messgae
+    human_description:
+      en_US: The field of messages to be publish, is usually a dict.
+      zh_Hans: 待发布的消息字段，通常是一个字典
+    llm_description: The field of messages to be sent, is usually a dict.
+    form: llm
+  - name: topic
+    type: string
+    required: true
+    label:
+      en_US: topic string
+      zh_Hans: topic string
+    human_description:
+      en_US: The field of topic to be publish.
+      zh_Hans: 待发布的Topic。
+    llm_description: The field of topic to be publish.
+    form: llm
