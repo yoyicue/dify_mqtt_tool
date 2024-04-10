@@ -17,7 +17,7 @@ class MultiplePublishTool(BuiltinTool):
         """
 
         msgs = tool_parameters.get('msgs')
-        if not message:return self.create_text_message('Invalid parameter message list')
+        if not msgs:return self.create_text_message('Invalid parameter message list')
         
         host = self.runtime.credentials.get('hostname')
         port = int(self.runtime.credentials.get('port'))
