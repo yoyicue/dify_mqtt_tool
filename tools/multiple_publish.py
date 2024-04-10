@@ -1,4 +1,6 @@
+import ast
 import json
+
 from typing import Any, Union
 import paho.mqtt.publish as publish
 
@@ -16,7 +18,7 @@ class MultiplePublishTool(BuiltinTool):
         https://eclipse.dev/paho/files/paho.mqtt.python/html/index.html
         """
 
-        msgs = list(tool_parameters.get('msgs'))
+        msgs = ast.literal_eval((tool_parameters.get('msgs')))
         if not msgs:return self.create_text_message('Invalid parameter message list')
         
         host = self.runtime.credentials.get('hostname')
