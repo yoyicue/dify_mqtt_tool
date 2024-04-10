@@ -16,7 +16,7 @@ class MultiplePublishTool(BuiltinTool):
         https://eclipse.dev/paho/files/paho.mqtt.python/html/index.html
         """
 
-        msgs = tool_parameters.get('msgs')
+        msgs = list(tool_parameters.get('msgs'))
         if not msgs:return self.create_text_message('Invalid parameter message list')
         
         host = self.runtime.credentials.get('hostname')
