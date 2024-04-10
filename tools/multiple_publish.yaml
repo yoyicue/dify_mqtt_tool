@@ -10,12 +10,12 @@ description:
     zh_Hans: 适用于您想要发布到代理程序的多个消息的情况，然后断开连接而无需其他操作。需要注意，并不会有成功与否的返回。
   llm: Suitable for when you want to post multiple messages to a broker and then disconnect without any other operations. It should be noted that there will be no return indicating success or failure.
 parameters:
-  - name: message_list
+  - name: msgs
     type: string
     required: true
     label:
-      en_US: messgae
-      zh_Hans: messgae
+      en_US: msgs
+      zh_Hans: msgs
     human_description:
       en_US: The list of messages to be published
       zh_Hans: 待发布的消息列表
