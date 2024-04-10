@@ -1,4 +1,4 @@
-
+import json
 from typing import Any, Union
 import paho.mqtt.publish as publish
 
@@ -20,7 +20,7 @@ class MultiplePublishTool(BuiltinTool):
         if not message:return self.create_text_message('Invalid parameter message list')
         
         host = self.runtime.credentials.get('hostname')
-        port = self.runtime.credentials.get('port')
+        port = int(self.runtime.credentials.get('port'))
         username = self.runtime.credentials.get('username')
         password = self.runtime.credentials.get('password')
         
