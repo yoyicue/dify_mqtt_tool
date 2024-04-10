@@ -1,5 +1,5 @@
 
-from typing import Any
+from typing import Any, Union
 import paho.mqtt.publish as publish
 
 from core.tools.entities.tool_entities import ToolInvokeMessage
